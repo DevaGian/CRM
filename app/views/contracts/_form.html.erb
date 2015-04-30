@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-    <%= f.fields_for :companies do |builder| %>
+    <%= f.fields_for :company do |builder| %>
         <%= render 'company_field', :f => builder %>
     <% end %>
   <div class="field">

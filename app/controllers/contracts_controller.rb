@@ -10,11 +10,14 @@ class ContractsController < ApplicationController
   # GET /contracts/1
   # GET /contracts/1.json
   def show
+    @company = Company.find_by_contract_id(@contract.id)
   end
 
   # GET /contracts/new
   def new
     @contract = Contract.new
+    @contract.build_company
+
     #@company = Company.new
     #company.address.build
     #head = company.head.build
@@ -79,8 +82,7 @@ class ContractsController < ApplicationController
                  :referent_id,
                  :data,
                  :activation_data,
-                 :companies,
-                 companies_attributes:
+                 company_attributes:
                      [:ragione_sociale,
                       :piva,
                       :phone_number,

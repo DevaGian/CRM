@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150417142959) do
+ActiveRecord::Schema.define(version: 20150430141501) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "route"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20150417142959) do
     t.string   "iban",            limit: 27
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.integer  "contract_id"
   end
 
   create_table "contracts", force: :cascade do |t|
