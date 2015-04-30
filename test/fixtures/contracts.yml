@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_id: 1
+  referent_id: 1
+  data: 2015-04-17
+  activation_data: 2015-04-17
+
+two:
+  company_id: 1
+  referent_id: 1
+  data: 2015-04-17
+  activation_data: 2015-04-17

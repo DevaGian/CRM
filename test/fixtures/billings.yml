@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ragione_sociale: MyString
+  address_id: 1
+  payment_mode: MyString
+  bank: MyString
+  agency: MyString
+  iban: MyString
+
+two:
+  ragione_sociale: MyString
+  address_id: 1
+  payment_mode: MyString
+  bank: MyString
+  agency: MyString
+  iban: MyString

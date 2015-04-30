@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  referent_id: 1
+  address_id: 1
+  ragione_sociale: MyString
+  piva: MyString
+  phone_number: MyString
+  fax: MyString
+  mail: MyString
+  iban: MyString
+
+two:
+  referent_id: 1
+  address_id: 1
+  ragione_sociale: MyString
+  piva: MyString
+  phone_number: MyString
+  fax: MyString
+  mail: MyString
+  iban: MyString

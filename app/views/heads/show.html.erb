@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @head.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @head.surname %>
+</p>
+
+<p>
+  <strong>Born date:</strong>
+  <%= @head.born_date %>
+</p>
+
+<p>
+  <strong>Born place:</strong>
+  <%= @head.born_place %>
+</p>
+
+<p>
+  <strong>Cod fiscale:</strong>
+  <%= @head.cod_fiscale %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @head.address_id %>
+</p>
+
+<p>
+  <strong>Document type:</strong>
+  <%= @head.document_type %>
+</p>
+
+<p>
+  <strong>Document number:</strong>
+  <%= @head.document_number %>
+</p>
+
+<p>
+  <strong>Document date:</strong>
+  <%= @head.document_date %>
+</p>
+
+<%= link_to 'Edit', edit_head_path(@head) %> |
+<%= link_to 'Back', heads_path %>

@@ -1,0 +1,20 @@
+<h1>Dati Azienda</h1>
+<%= f.label 'Ragione Sociale' %>
+<%= f.text_field :ragione_sociale %><br>
+<%= f.label 'Partita IVA' %>
+<%= f.text_field :piva %><br>
+<%= f.label 'Telefono' %>
+<%= f.text_field :phone_number %><br>
+<%= f.label 'Fax' %>
+<%= f.text_field :fax %><br>
+<%= f.label 'E-Mail' %>
+<%= f.text_field :mail %><br>
+<%= f.label 'IBAN' %>
+<%= f.text_field :iban %><br>
+<%= f.fields_for :address do |builder| %>
+    <%= render 'address_field', :f => builder %>
+<% end %>
+<br><br>
+<%= f.fields_for :head do |builder| %>
+    <%= render 'head_field', :f => builder %>
+<% end %>

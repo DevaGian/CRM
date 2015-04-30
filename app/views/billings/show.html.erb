@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ragione sociale:</strong>
+  <%= @billing.ragione_sociale %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @billing.address_id %>
+</p>
+
+<p>
+  <strong>Payment mode:</strong>
+  <%= @billing.payment_mode %>
+</p>
+
+<p>
+  <strong>Bank:</strong>
+  <%= @billing.bank %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @billing.agency %>
+</p>
+
+<p>
+  <strong>Iban:</strong>
+  <%= @billing.iban %>
+</p>
+
+<%= link_to 'Edit', edit_billing_path(@billing) %> |
+<%= link_to 'Back', billings_path %>

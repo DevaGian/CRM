@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag 'home' %>
+<div id="welcome">
+  Stellar CRM-O<p style="font-size: 10px"><br>
+  <%= image_tag 'home/arrow.png', {:alt => 'arrow', :width => 25, :height => 25, :id => 'arrow'}%>
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4" id="login">
+      <table class="table-wrapper" width="100%" align="center">
+      <form>
+        <tr><td align="center"><br><input type="text" placeholder="Username"><br><br></td></tr>
+        <tr><td align="center"><input type="text" placeholder="Password"><br><br></td></tr>
+        <tr><td align="center"><%= link_to 'Accedi', home_nono_path, class: 'btn btn-default'%><br><br></tr>
+      </form>
+      </table>
+  </div>
+  <div class="col-sm-4"><input type="hidden" value="1" id="start"></div>
+</div>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<%= javascript_include_tag 'home/init' %>

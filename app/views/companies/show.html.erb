@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Referent:</strong>
+  <%= @company.referent_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @company.address_id %>
+</p>
+
+<p>
+  <strong>Ragione sociale:</strong>
+  <%= @company.ragione_sociale %>
+</p>
+
+<p>
+  <strong>Piva:</strong>
+  <%= @company.piva %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @company.phone_number %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @company.fax %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @company.mail %>
+</p>
+
+<p>
+  <strong>Iban:</strong>
+  <%= @company.iban %>
+</p>
+
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

@@ -1,0 +1,20 @@
+<h1>Dati Rappresentante</h1>
+<%= f.label 'Nome' %>
+<%= f.text_field :name %><br>
+<%= f.label 'Cognome' %>
+<%= f.text_field :surname %><br>
+<%= f.label ' Data di Nascita' %>
+<%= f.date_select :born_date %><br>
+<%= f.label 'Luogo di nascita' %>
+<%= f.text_field :born_place %><br>
+<%= f.label 'Codice fiscale' %>
+<%= f.text_field :cod_fiscale %><br>
+<%= f.label 'Tipo documento' %>
+<%= f.text_field :document_type %><br>
+<%= f.label 'Numero Documento' %>
+<%= f.number_field :document_number %><br>
+<%= f.label 'Rilascio' %>
+<%= f.date_select :document_date %><br>
+<%= f.fields_for :address do |builder| %>
+    <%= render 'address_field', :f => builder %>
+<% end %>

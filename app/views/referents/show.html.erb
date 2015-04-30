@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @referent.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @referent.surname %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @referent.role %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @referent.phone %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @referent.mail %>
+</p>
+
+<%= link_to 'Edit', edit_referent_path(@referent) %> |
+<%= link_to 'Back', referents_path %>
