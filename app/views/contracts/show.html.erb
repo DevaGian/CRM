@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<h1><%= @company.ragione_sociale %></h1>
+<h1><%= @company.ragione_sociale %> (<%= @company_address.route %>)</h1>
+<h2><%= @head.name + ' ' + @head.surname  %> (<%= @head_address.route %>)</h2>
 <p>
   <strong>Company:</strong>
   <%= @contract.company_id %>

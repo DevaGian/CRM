@@ -1,4 +1,4 @@
 class Address < ActiveRecord::Base
-  belongs_to :company
-  belongs_to :head
+  has_one :company
+  has_one :head
 end

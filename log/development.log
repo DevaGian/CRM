@@ -20260,3 +20260,2047 @@ Processing by ContractsController#show as HTML
   [1m[35mCompany Load (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 32]]
   Rendered contracts/show.html.erb within layouts/application (0.7ms)
 Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCompanyIdIdHead (20150430150802)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150430150802"]]
+  [1m[35m (139.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCompanyIdIdHeads (20150430150852)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150430150852"]]
+  [1m[35m (100.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:19:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContractsController#new as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+NameError (undefined local variable or method `head' for #<Class:0x00000005747548>):
+  app/models/contract.rb:5:in `<class:Contract>'
+  app/models/contract.rb:1:in `<top (required)>'
+  app/controllers/contracts_controller.rb:18:in `new'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.0ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:31:20 +0200
+Processing by ContractsController#new as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.8ms)
+
+NoMethodError (undefined method `build_head' for #<Contract:0x000000052e9c80>):
+  app/controllers/contracts_controller.rb:20:in `new'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.4ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (22.8ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_address_field.erb (15.8ms)
+  Rendered contracts/_address_field.erb (8.9ms)
+  Rendered contracts/_head_field.erb (26.7ms)
+  Rendered contracts/_company_field.erb (56.2ms)
+  Rendered contracts/_form.html.erb (62.9ms)
+  Rendered contracts/new.html.erb within layouts/application (63.9ms)
+Completed 200 OK in 364ms (Views: 347.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-04-30 17:32:29 +0200
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_company_field.erb (10.4ms)
+  Rendered contracts/_form.html.erb (15.6ms)
+  Rendered contracts/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 160ms (Views: 137.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:55 +0200
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_company_field.erb (4.4ms)
+  Rendered contracts/_form.html.erb (23.2ms)
+  Rendered contracts/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 152ms (Views: 149.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-04-30 17:33:57 +0200
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_company_field.erb (6.8ms)
+  Rendered contracts/_form.html.erb (10.7ms)
+  Rendered contracts/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 131ms (Views: 116.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-30 17:34:08 +0200
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-04-30 17:37:26 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d9G6O2rQ/VVV3D/xR0vRcOqYVwuvECClTZ28XJH9BBOyEoYUTGzduSkhD3rtoo82rcCQQtYvOua42+TqQdEvZg==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>""}, "data(1i)"=>"2015", "data(2i)"=>"4", "data(3i)"=>"30", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"4", "activation_data(3i)"=>"30"}, "commit"=>"Create Contract"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["data", "2015-04-30"], ["activation_data", "2015-04-30"], ["created_at", "2015-04-30 15:37:26.509403"], ["updated_at", "2015-04-30 15:37:26.509403"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", ""], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 33], ["created_at", "2015-04-30 15:37:26.511843"], ["updated_at", "2015-04-30 15:37:26.511843"]]
+  [1m[36m (130.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/33
+Completed 302 Found in 158ms (ActiveRecord: 131.0ms)
+
+
+Started GET "/contracts/33" for 127.0.0.1 at 2015-04-30 17:37:26 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mContract Load (0.2ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 33]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 33]]
+  Rendered contracts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCompanyIdToHeads (20150430154121)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "heads" ADD "company_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150430154121"]]
+  [1m[36m (146.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-07 14:30:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (235.5ms)
+Completed 200 OK in 1199ms (Views: 1175.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 14:30:58 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_company_field.erb (123.4ms)
+  Rendered contracts/_form.html.erb (167.9ms)
+  Rendered contracts/new.html.erb within layouts/application (192.9ms)
+Completed 200 OK in 437ms (Views: 305.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 14:34:55 +0200
+Processing by ContractsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+NameError (undefined local variable or method `head' for #<Class:0x00000005716ce0>):
+  app/models/contract.rb:5:in `<class:Contract>'
+  app/models/contract.rb:1:in `<top (required)>'
+  app/controllers/contracts_controller.rb:18:in `new'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (36.8ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 14:35:28 +0200
+Processing by ContractsController#new as HTML
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.1ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'company_id' for Address.):
+  app/controllers/contracts_controller.rb:21:in `new'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (23.5ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (21.1ms)
+  Rendered contracts/_company_field.erb (99.1ms)
+  Rendered contracts/_form.html.erb (103.2ms)
+  Rendered contracts/new.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 251ms (Views: 227.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 14:36:18 +0200
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:00:03 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lvd/uqjt27sidbvXwAKhgIupmkM03W1sffmjf8G4/26i/ooGyX7ra3qHJrKE95EM1HmO3qtzkSDgm7ctteyDlg==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"Azienda", "piva"=>"4959583051", "phone_number"=>"39495868594", "fax"=>"49568494", "mail"=>"ekfjgirin", "iban"=>"eicmei", "head_attributes"=>{"name"=>"rappr", "surname"=>"esentante", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"desenzano", "cod_fiscale"=>"sisidieie", "document_type"=>"patente", "document_number"=>"443", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+Unpermitted parameter: head_attributes
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:00:03.162476"], ["updated_at", "2015-05-07 13:00:03.162476"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", "Azienda"], ["piva", "4959583051"], ["phone_number", "39495868594"], ["fax", "49568494"], ["mail", "ekfjgirin"], ["iban", "eicmei"], ["contract_id", 34], ["created_at", "2015-05-07 13:00:03.200001"], ["updated_at", "2015-05-07 13:00:03.200001"]]
+  [1m[36m (148.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/34
+Completed 302 Found in 195ms (ActiveRecord: 148.4ms)
+
+
+Started GET "/contracts/34" for 127.0.0.1 at 2015-05-07 15:00:03 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mContract Load (0.2ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 34]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 34]]
+  Rendered contracts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 150ms (Views: 124.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/show" for 127.0.0.1 at 2015-05-07 15:00:24 +0200
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Company with 'id'=show):
+  app/controllers/companies_controller.rb:69:in `set_company'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (22.7ms)
+
+
+Started GET "/companies/show/" for 127.0.0.1 at 2015-05-07 15:01:17 +0200
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Company with 'id'=show):
+  app/controllers/companies_controller.rb:69:in `set_company'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.5ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (22.6ms)
+
+
+Started GET "/companies" for 127.0.0.1 at 2015-05-07 15:01:24 +0200
+Processing by CompaniesController#index as HTML
+  [1m[35mCompany Load (0.1ms)[0m  SELECT "companies".* FROM "companies"
+  Rendered companies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/heads" for 127.0.0.1 at 2015-05-07 15:01:35 +0200
+Processing by HeadsController#index as HTML
+  [1m[36mHead Load (0.1ms)[0m  [1mSELECT "heads".* FROM "heads"[0m
+  Rendered heads/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 114ms (Views: 112.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/companies/5" for 127.0.0.1 at 2015-05-07 15:01:43 +0200
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered companies/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 123ms (Views: 121.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:13:34 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (5.2ms)
+  Rendered contracts/_company_field.erb (10.1ms)
+  Rendered contracts/_form.html.erb (13.8ms)
+  Rendered contracts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 130ms (Views: 108.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:14:06 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WGxItGRn0Lgi5DuXrqEjWPhjBJWQyya7yVFGDvsdl2zUZb0IBfTgaHoWpvLqVBPUp7MQCA9l2vdUM1Jcj0nrlA==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"", "surname"=>"", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+Unpermitted parameter: head_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:14:06.092077"], ["updated_at", "2015-05-07 13:14:06.092077"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ragione_sociale", ""], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 35], ["created_at", "2015-05-07 13:14:06.094037"], ["updated_at", "2015-05-07 13:14:06.094037"]]
+  [1m[35m (110.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts/35
+Completed 302 Found in 118ms (ActiveRecord: 110.8ms)
+
+
+Started GET "/contracts/35" for 127.0.0.1 at 2015-05-07 15:14:06 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mContract Load (0.2ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 35]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 35]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:19:24 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (5.4ms)
+  Rendered contracts/_company_field.erb (10.1ms)
+  Rendered contracts/_form.html.erb (13.6ms)
+  Rendered contracts/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 152ms (Views: 107.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:21:04 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vzs2549455vEVjiJ9rSReR84l/sydNNHA7O9/MLQkGEzMsNb7uvXS5ykpeyyQaH1QOiDZq3aLwue0amutoTsmQ==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"", "surname"=>"", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+Unpermitted parameter: head_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", ""], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["created_at", "2015-05-07 13:21:04.040793"], ["updated_at", "2015-05-07 13:21:04.040793"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contracts" ("data", "activation_data", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["company_id", 7], ["created_at", "2015-05-07 13:21:04.043621"], ["updated_at", "2015-05-07 13:21:04.043621"]]
+  [1m[35m (92.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts/36
+Completed 302 Found in 103ms (ActiveRecord: 93.6ms)
+
+
+Started GET "/contracts/36" for 127.0.0.1 at 2015-05-07 15:21:04 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mContract Load (0.2ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 36]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 36]]
+  Rendered contracts/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `ragione_sociale' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: <h1><%= @company.ragione_sociale %></h1>
+    3: <p>
+    4:   <strong>Company:</strong>
+    5:   <%= @contract.company_id %>
+  app/views/contracts/show.html.erb:2:in `_app_views_contracts_show_html_erb___878732824368998610_70111000810080'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (25.6ms)
+
+
+Started GET "/contracts/36" for 127.0.0.1 at 2015-05-07 15:23:37 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 36]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 36]]
+  Rendered contracts/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `ragione_sociale' for nil:NilClass):
+    1: <p id="notice"><%= notice %></p>
+    2: <h1><%= @company.ragione_sociale %></h1>
+    3: <p>
+    4:   <strong>Company:</strong>
+    5:   <%= @contract.company_id %>
+  app/views/contracts/show.html.erb:2:in `_app_views_contracts_show_html_erb___878732824368998610_70111000810080'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.1ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (24.6ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:17 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mContract Load (0.3ms)[0m  [1mSELECT "contracts".* FROM "contracts"[0m
+  Rendered contracts/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 135ms (Views: 130.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/contracts/32" for 127.0.0.1 at 2015-05-07 15:25:19 +0200
+Processing by ContractsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OJSLAaK63YmsnFpdwbEsF4Wds6m0VOhHkcrReffg4pO0nX69wyntWfRuxziFRByb2k2nNCv6FAsMqMUrg7Seaw==", "id"=>"32"}
+  [1m[35mContract Load (0.4ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 32]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 32]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "companies" WHERE "companies"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "contracts" WHERE "contracts"."id" = ?  [["id", 32]]
+  [1m[36m (106.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts
+Completed 302 Found in 130ms (ActiveRecord: 107.6ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:19 +0200
+Processing by ContractsController#index as HTML
+  [1m[35mContract Load (0.5ms)[0m  SELECT "contracts".* FROM "contracts"
+  Rendered contracts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/contracts/33" for 127.0.0.1 at 2015-05-07 15:25:21 +0200
+Processing by ContractsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pClWbWv8KmhuLeKPDP9fgviZnJe3lBLF926BaOteq6IoIKPRCm8auDbff+pICm8Op0mICig67olqDJU6nwrXWg==", "id"=>"33"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 33]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 33]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "companies" WHERE "companies"."id" = ?  [["id", 4]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "contracts" WHERE "contracts"."id" = ?[0m  [["id", 33]]
+  [1m[35m (111.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts
+Completed 302 Found in 115ms (ActiveRecord: 112.2ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:22 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT "contracts".* FROM "contracts"[0m
+  Rendered contracts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 106ms (Views: 105.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contracts/34" for 127.0.0.1 at 2015-05-07 15:25:24 +0200
+Processing by ContractsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iFh3fzoNBhKq82wqnE90jZJQMsJSg3UHzpkoKkWUP78EUYLDW542wvIB8U/YukQBzYAmX80tiUtT+zx4McBDRw==", "id"=>"34"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 34]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCompany Load (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 34]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "companies" WHERE "companies"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "contracts" WHERE "contracts"."id" = ?  [["id", 34]]
+  [1m[36m (151.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts
+Completed 302 Found in 154ms (ActiveRecord: 151.7ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:24 +0200
+Processing by ContractsController#index as HTML
+  [1m[35mContract Load (0.1ms)[0m  SELECT "contracts".* FROM "contracts"
+  Rendered contracts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 99ms (Views: 98.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contracts/35" for 127.0.0.1 at 2015-05-07 15:25:25 +0200
+Processing by ContractsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QwRKoq0IE49rjOizRDeDOZjg5lJBj6bpes0baf49bnTPDb8ezJsjXzN+ddYAwrO1xzDyz94hWqXnrw87imkSjA==", "id"=>"35"}
+  [1m[36mContract Load (0.2ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 35]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 35]]
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "companies" WHERE "companies"."id" = ?  [["id", 6]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "contracts" WHERE "contracts"."id" = ?[0m  [["id", 35]]
+  [1m[35m (101.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts
+Completed 302 Found in 105ms (ActiveRecord: 102.1ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:25 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT "contracts".* FROM "contracts"[0m
+  Rendered contracts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 110ms (Views: 109.5ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/contracts/36" for 127.0.0.1 at 2015-05-07 15:25:27 +0200
+Processing by ContractsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cEsZTZKxUyCgl4ZLRhDrCFF3+jXZ3ETPgv9sIeGd5gf8Quzx8yJj8PhlGy4C5duEDqfuqEZyuIMfnXhzlcma/w==", "id"=>"36"}
+  [1m[35mContract Load (0.2ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 36]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 36]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "contracts" WHERE "contracts"."id" = ?[0m  [["id", 36]]
+  [1m[35m (90.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts
+Completed 302 Found in 95ms (ActiveRecord: 91.2ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:27 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT "contracts".* FROM "contracts"[0m
+  Rendered contracts/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 103ms (Views: 102.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:25:37 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (6.0ms)
+  Rendered contracts/_company_field.erb (11.4ms)
+  Rendered contracts/_form.html.erb (15.2ms)
+  Rendered contracts/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 130ms (Views: 119.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:25:40 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TwsRysaNCVDLS0DYegiW4n+uwGx51oQKBBwc549cbPDDAuR2px45gJO53b0+/aZuIH7U8eZ4eEaZfgi1+wgQCA==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"", "surname"=>"", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+Unpermitted parameter: head_attributes
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:25:40.627557"], ["updated_at", "2015-05-07 13:25:40.627557"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", ""], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 37], ["created_at", "2015-05-07 13:25:40.629353"], ["updated_at", "2015-05-07 13:25:40.629353"]]
+  [1m[36m (111.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/37
+Completed 302 Found in 121ms (ActiveRecord: 111.8ms)
+
+
+Started GET "/contracts/37" for 127.0.0.1 at 2015-05-07 15:25:40 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 37]]
+  [1m[36mCompany Load (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 37]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 100ms (Views: 98.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:25:51 +0200
+Processing by ContractsController#index as HTML
+  [1m[35mContract Load (0.2ms)[0m  SELECT "contracts".* FROM "contracts"
+  Rendered contracts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 158ms (Views: 157.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:25:52 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (9.8ms)
+  Rendered contracts/_company_field.erb (15.6ms)
+  Rendered contracts/_form.html.erb (23.5ms)
+  Rendered contracts/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 182ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:25:55 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aJVt9mPozSMjlBBRS16qpTK9A2qZFKdd6SiVzjsdR2LknJhKAnv983tmjTQPq5opbW0X9wa6WxF0SoGcT0k7mg==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"ddddddd", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"", "surname"=>"", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+Unpermitted parameter: head_attributes
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:25:55.687549"], ["updated_at", "2015-05-07 13:25:55.687549"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ragione_sociale", "ddddddd"], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 38], ["created_at", "2015-05-07 13:25:55.689047"], ["updated_at", "2015-05-07 13:25:55.689047"]]
+  [1m[35m (187.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts/38
+Completed 302 Found in 195ms (ActiveRecord: 187.4ms)
+
+
+Started GET "/contracts/38" for 127.0.0.1 at 2015-05-07 15:25:55 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 38]]
+  [1m[35mCompany Load (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 38]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.1ms)
+  [1m[36mContract Load (0.3ms)[0m  [1mSELECT  "contracts".* FROM "contracts"  ORDER BY "contracts"."id" DESC LIMIT 1[0m
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies"  ORDER BY "companies"."id" DESC LIMIT 1
+
+
+Started GET "/contracts/" for 127.0.0.1 at 2015-05-07 15:43:13 +0200
+Processing by ContractsController#index as HTML
+  [1m[36mContract Load (0.4ms)[0m  [1mSELECT "contracts".* FROM "contracts"[0m
+  Rendered contracts/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 179ms (Views: 174.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:43:27 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (5.7ms)
+  Rendered contracts/_company_field.erb (10.9ms)
+  Rendered contracts/_form.html.erb (14.5ms)
+  Rendered contracts/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 135ms (Views: 118.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:43:29 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0s68YjWP0WOO2SZ7N21wXc8gu+i1qh1bZrVoW7ewMFFex0neVBzhs9Yrux5zmEDRkPCvdSoE4Rf713wJw+RMqQ==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"", "surname"=>"", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:43:29.885128"], ["updated_at", "2015-05-07 13:43:29.885128"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", ""], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 39], ["created_at", "2015-05-07 13:43:29.886092"], ["updated_at", "2015-05-07 13:43:29.886092"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "heads" ("name", "surname", "born_place", "cod_fiscale", "document_type", "document_number", "born_date", "document_date", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", ""], ["surname", ""], ["born_place", ""], ["cod_fiscale", ""], ["document_type", ""], ["document_number", ""], ["born_date", "2015-05-07"], ["document_date", "2015-05-07"], ["company_id", 10], ["created_at", "2015-05-07 13:43:29.886848"], ["updated_at", "2015-05-07 13:43:29.886848"]]
+  [1m[35m (174.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/contracts/39
+Completed 302 Found in 181ms (ActiveRecord: 175.0ms)
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:43:30 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mContract Load (0.2ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 39]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 39]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 101ms (Views: 99.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 39]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 39]]
+  [1m[36mHead Load (0.1ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 10]]
+  Rendered contracts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 116ms (Views: 95.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:07 +0200
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 39]]
+  [1m[36mCompany Load (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 39]]
+  [1m[35mHead Load (0.1ms)[0m  SELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1  [["company_id", 10]]
+  Rendered contracts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 106ms (Views: 104.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:08 +0200
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 39]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 39]]
+  [1m[36mHead Load (0.0ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 10]]
+  Rendered contracts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:09 +0200
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 39]]
+  [1m[36mCompany Load (0.0ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 39]]
+  [1m[35mHead Load (0.0ms)[0m  SELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1  [["company_id", 10]]
+  Rendered contracts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:10 +0200
+
+
+Started GET "/contracts/39" for 127.0.0.1 at 2015-05-07 15:48:11 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 39]]
+  [1m[35mCompany Load (0.0ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 39]]
+  [1m[36mHead Load (0.0ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 10]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:12 +0200
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:48:16 +0200
+Processing by ContractsController#index as HTML
+  [1m[35mContract Load (0.2ms)[0m  SELECT "contracts".* FROM "contracts"
+  Rendered contracts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:48:17 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_head_field.erb (16.8ms)
+  Rendered contracts/_company_field.erb (26.2ms)
+  Rendered contracts/_form.html.erb (31.6ms)
+  Rendered contracts/new.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 179ms (Views: 175.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:48:28 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L8NMgsmWswAatI5+A/Nj1vQs3a8d2EPiv4YP17tn7sGjyrk+qAWD0EJGExtHBlNaq/zJMoJ2v64i5BuFzzOSOQ==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"Lombardi", "piva"=>"", "phone_number"=>"", "fax"=>"", "mail"=>"", "iban"=>"", "head_attributes"=>{"name"=>"Ennio", "surname"=>"Lomabardi", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"", "cod_fiscale"=>"", "document_type"=>"", "document_number"=>"", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7"}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:48:28.077880"], ["updated_at", "2015-05-07 13:48:28.077880"]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ragione_sociale", "Lombardi"], ["piva", ""], ["phone_number", ""], ["fax", ""], ["mail", ""], ["iban", ""], ["contract_id", 40], ["created_at", "2015-05-07 13:48:28.080015"], ["updated_at", "2015-05-07 13:48:28.080015"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "heads" ("name", "surname", "born_place", "cod_fiscale", "document_type", "document_number", "born_date", "document_date", "company_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Ennio"], ["surname", "Lomabardi"], ["born_place", ""], ["cod_fiscale", ""], ["document_type", ""], ["document_number", ""], ["born_date", "2015-05-07"], ["document_date", "2015-05-07"], ["company_id", 11], ["created_at", "2015-05-07 13:48:28.081680"], ["updated_at", "2015-05-07 13:48:28.081680"]]
+  [1m[36m (157.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/40
+Completed 302 Found in 168ms (ActiveRecord: 158.8ms)
+
+
+Started GET "/contracts/40" for 127.0.0.1 at 2015-05-07 15:48:28 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 40]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 40]]
+  [1m[35mHead Load (0.1ms)[0m  SELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1  [["company_id", 11]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contracts/40" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 40]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 40]]
+  [1m[36mHead Load (0.1ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 11]]
+  Rendered contracts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 15:48:47 +0200
+
+
+Started GET "/contracts" for 127.0.0.1 at 2015-05-07 15:52:53 +0200
+Processing by ContractsController#index as HTML
+  [1m[35mContract Load (0.3ms)[0m  SELECT "contracts".* FROM "contracts"
+  Rendered contracts/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 110ms (Views: 107.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:52:55 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_address_field.erb (6.5ms)
+  Rendered contracts/_address_field.erb (3.5ms)
+  Rendered contracts/_head_field.erb (16.0ms)
+  Rendered contracts/_company_field.erb (62.0ms)
+  Rendered contracts/_form.html.erb (69.4ms)
+  Rendered contracts/new.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 277ms (Views: 227.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/contracts/new" for 127.0.0.1 at 2015-05-07 15:53:50 +0200
+Processing by ContractsController#new as HTML
+  Rendered contracts/_address_field.erb (2.6ms)
+  Rendered contracts/_address_field.erb (1.8ms)
+  Rendered contracts/_head_field.erb (7.6ms)
+  Rendered contracts/_company_field.erb (13.8ms)
+  Rendered contracts/_form.html.erb (18.1ms)
+  Rendered contracts/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 160ms (Views: 123.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/contracts" for 127.0.0.1 at 2015-05-07 15:57:25 +0200
+Processing by ContractsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6/TTxTJ/vWJCZNdjuTL0uYe6GgF9u+mOxNYGZjE17/1n/SZ5U+yNshqWSgb9x8Q12GoOnOIVFcJZtBI0RWGTBQ==", "contract"=>{"company_attributes"=>{"ragione_sociale"=>"Chiesa Cattolica", "piva"=>"3049rjfit", "phone_number"=>"666", "fax"=>"666", "mail"=>"amministrazione@ior.vat", "iban"=>"dkeorofti50604", "address_attributes"=>{"route"=>"brabrabl", "number"=>"34", "cap"=>"20340", "prov"=>"VA", "city"=>"Roma"}, "head_attributes"=>{"name"=>"Carol", "surname"=>"wojitla", "born_date(1i)"=>"2015", "born_date(2i)"=>"5", "born_date(3i)"=>"7", "born_place"=>"Polonia", "cod_fiscale"=>"crlwtl666", "document_type"=>"Diploma in seminario", "document_number"=>"45", "document_date(1i)"=>"2015", "document_date(2i)"=>"5", "document_date(3i)"=>"7", "address_attributes"=>{"route"=>"woddje", "number"=>"033", "cap"=>"21234", "prov"=>"WA", "city"=>"Varsavia"}}}, "data(1i)"=>"2015", "data(2i)"=>"5", "data(3i)"=>"7", "activation_data(1i)"=>"2015", "activation_data(2i)"=>"5", "activation_data(3i)"=>"7"}, "commit"=>"Create Contract"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contracts" ("data", "activation_data", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["data", "2015-05-07"], ["activation_data", "2015-05-07"], ["created_at", "2015-05-07 13:57:25.399770"], ["updated_at", "2015-05-07 13:57:25.399770"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "addresses" ("route", "number", "cap", "prov", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["route", "brabrabl"], ["number", 34], ["cap", "20340"], ["prov", "VA"], ["city", "Roma"], ["created_at", "2015-05-07 13:57:25.401940"], ["updated_at", "2015-05-07 13:57:25.401940"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "companies" ("ragione_sociale", "piva", "phone_number", "fax", "mail", "iban", "contract_id", "address_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["ragione_sociale", "Chiesa Cattolica"], ["piva", "3049rjfit"], ["phone_number", "666"], ["fax", "666"], ["mail", "amministrazione@ior.vat"], ["iban", "dkeorofti50604"], ["contract_id", 41], ["address_id", 1], ["created_at", "2015-05-07 13:57:25.403872"], ["updated_at", "2015-05-07 13:57:25.403872"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "addresses" ("route", "number", "cap", "prov", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["route", "woddje"], ["number", 33], ["cap", "21234"], ["prov", "WA"], ["city", "Varsavia"], ["created_at", "2015-05-07 13:57:25.406032"], ["updated_at", "2015-05-07 13:57:25.406032"]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "heads" ("name", "surname", "born_place", "cod_fiscale", "document_type", "document_number", "born_date", "document_date", "company_id", "address_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "Carol"], ["surname", "wojitla"], ["born_place", "Polonia"], ["cod_fiscale", "crlwtl666"], ["document_type", "Diploma in seminario"], ["document_number", "45"], ["born_date", "2015-05-07"], ["document_date", "2015-05-07"], ["company_id", 12], ["address_id", 2], ["created_at", "2015-05-07 13:57:25.406762"], ["updated_at", "2015-05-07 13:57:25.406762"]]
+  [1m[36m (200.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/contracts/41
+Completed 302 Found in 218ms (ActiveRecord: 201.7ms)
+
+
+Started GET "/contracts/41" for 127.0.0.1 at 2015-05-07 15:57:25 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mContract Load (0.2ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 41]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 41]]
+  [1m[35mHead Load (0.1ms)[0m  SELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1  [["company_id", 12]]
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 106ms (Views: 103.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contracts/41" for 127.0.0.1 at 2015-05-07 16:02:33 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mContract Load (0.1ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 41]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 41]]
+  [1m[36mHead Load (0.1ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 12]]
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE (1) LIMIT 1
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE (2) LIMIT 1[0m
+  Rendered contracts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 139ms (Views: 110.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/contracts/41" for 127.0.0.1 at 2015-05-07 16:03:41 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[35mContract Load (0.1ms)[0m  SELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1  [["id", 41]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1[0m  [["contract_id", 41]]
+  [1m[35mHead Load (0.5ms)[0m  SELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1  [["company_id", 12]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered contracts/show.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 3.0ms)
+
+SyntaxError (/home/gianluca/Scrivania/Rails_Project/CRM-O/app/views/contracts/show.html.erb:3: syntax error, unexpected '<'
+<h2><%= @head.name + ' ' + @he...
+ ^
+/home/gianluca/Scrivania/Rails_Project/CRM-O/app/views/contracts/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+/home/gianluca/Scrivania/Rails_Project/CRM-O/app/views/contracts/show.html.erb:29: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/contracts/show.html.erb:3: syntax error, unexpected '<'
+  app/views/contracts/show.html.erb:27: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/contracts/show.html.erb:29: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@global/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.8ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.5ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/gianluca/.rvm/gems/ruby-2.2.0@CRM-O/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (22.8ms)
+
+
+Started GET "/contracts/41" for 127.0.0.1 at 2015-05-07 16:04:40 +0200
+Processing by ContractsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mContract Load (0.2ms)[0m  [1mSELECT  "contracts".* FROM "contracts" WHERE "contracts"."id" = ? LIMIT 1[0m  [["id", 41]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."contract_id" = ? LIMIT 1  [["contract_id", 41]]
+  [1m[36mHead Load (0.1ms)[0m  [1mSELECT  "heads".* FROM "heads" WHERE "heads"."company_id" = ? LIMIT 1[0m  [["company_id", 12]]
+  [1m[35mAddress Load (0.1ms)[0m  SELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT  "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered contracts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 137ms (Views: 133.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/addresses.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/billings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/referents.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/contracts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/heads.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/home.self-74836ce572d5c48d1ba63d3c45b6ec99936c24828092fbab28a4a3ae18484c59.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/scaffolds.self-decdd67f451f2117a78c27c03c74c8987b08288d4eb11e6298a8e0c5750f354a.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/application.self-fe45542b12b3df04d5e96a3c907a14250702c6aa841c063f745348bb682a959b.css?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/addresses.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/billings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/contracts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/heads.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/referents.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/home/init.self-4aa26594765a8bcfa89858139168b837a9887fdd40a2c0b232012ecec61bf21b.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2015-05-07 16:04:41 +0200
