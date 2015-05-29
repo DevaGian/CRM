@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Suites</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cpu p</th>
+      <th>Ram p</th>
+      <th>Hd p</th>
+      <th>Nas p</th>
+      <th>Cpu q</th>
+      <th>Ram q</th>
+      <th>Hd q</th>
+      <th>Nas q</th>
+      <th>Base</th>
+      <th>Mensilita</th>
+      <th>Attivazione</th>
+      <th>Tot</th>
+      <th>Costumer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @suites.each do |suite| %>
+      <tr>
+        <td><%= suite.cpu_p %></td>
+        <td><%= suite.ram_p %></td>
+        <td><%= suite.hd_p %></td>
+        <td><%= suite.nas_p %></td>
+        <td><%= suite.cpu_q %></td>
+        <td><%= suite.ram_q %></td>
+        <td><%= suite.hd_q %></td>
+        <td><%= suite.nas_q %></td>
+        <td><%= suite.base %></td>
+        <td><%= suite.mensilita %></td>
+        <td><%= suite.attivazione %></td>
+        <td><%= suite.tot %></td>
+        <td><%= suite.costumer_id %></td>
+        <td><%= link_to 'Show', suite %></td>
+        <td><%= link_to 'Edit', edit_suite_path(suite) %></td>
+        <td><%= link_to 'Destroy', suite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Suite', new_suite_path %>

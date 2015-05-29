@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  dominio: MyString
+  mb: 1
+  mensilita: 1
+
+two:
+  nome: MyString
+  dominio: MyString
+  mb: 1
+  mensilita: 1

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @seo.tipo %>
+</p>
+
+<p>
+  <strong>Parole:</strong>
+  <%= @seo.parole %>
+</p>
+
+<p>
+  <strong>Importo:</strong>
+  <%= @seo.importo %>
+</p>
+
+<p>
+  <strong>Attivazione:</strong>
+  <%= @seo.attivazione %>
+</p>
+
+<p>
+  <strong>Mensilita:</strong>
+  <%= @seo.mensilita %>
+</p>
+
+<%= link_to 'Edit', edit_seo_path(@seo) %> |
+<%= link_to 'Back', seos_path %>

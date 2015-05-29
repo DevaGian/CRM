@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cpu_p: 1.5
+  ram_p: 1.5
+  hd_p: 1.5
+  nas_p: 1.5
+  cpu_q: 1
+  ram_q: 1
+  hd_q: 1
+  nas_q: 1
+  base: 1.5
+  mensilita: 1
+  attivazione: 2015-05-22
+  tot: 1.5
+  costumer_id: 1
+
+two:
+  cpu_p: 1.5
+  ram_p: 1.5
+  hd_p: 1.5
+  nas_p: 1.5
+  cpu_q: 1
+  ram_q: 1
+  hd_q: 1
+  nas_q: 1
+  base: 1.5
+  mensilita: 1
+  attivazione: 2015-05-22
+  tot: 1.5
+  costumer_id: 1

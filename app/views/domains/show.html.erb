@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @domain.nome %>
+</p>
+
+<p>
+  <strong>Estensione:</strong>
+  <%= @domain.estensione %>
+</p>
+
+<p>
+  <strong>Costo:</strong>
+  <%= @domain.costo %>
+</p>
+
+<p>
+  <strong>Mensilita:</strong>
+  <%= @domain.mensilita %>
+</p>
+
+<p>
+  <strong>Tot:</strong>
+  <%= @domain.tot %>
+</p>
+
+<%= link_to 'Edit', edit_domain_path(@domain) %> |
+<%= link_to 'Back', domains_path %>

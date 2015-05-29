@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @costumer_mail.nome %>
+</p>
+
+<p>
+  <strong>Dominio:</strong>
+  <%= @costumer_mail.dominio %>
+</p>
+
+<p>
+  <strong>Mb:</strong>
+  <%= @costumer_mail.mb %>
+</p>
+
+<p>
+  <strong>Mensilita:</strong>
+  <%= @costumer_mail.mensilita %>
+</p>
+
+<%= link_to 'Edit', edit_costumer_mail_path(@costumer_mail) %> |
+<%= link_to 'Back', costumer_mails_path %>

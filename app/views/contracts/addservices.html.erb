@@ -1,0 +1,18 @@
+<%= form_for @contract do |f| %>
+<% 9.times{ %>
+        <%= f.fields_for Service.new do |ff| %>
+            <%= ff.label :tipo %>
+            <%= ff.text_field :tipo %>
+            <%= ff.label :cu %>
+            <%= ff.text_field :cu %>
+            <%= ff.number_field :q %>
+            <%= ff.label :mensilita %>
+            <%= ff.number_field :mensilita %>
+            <%= ff.label :tot %>
+            <%= ff.text_field :tot %>
+            <%= ff.label :attivazione %>
+            <%= ff.date_select :attivazione %>
+            <% end %>
+<% } %>
+<%= f.submit %>
+<% end %>

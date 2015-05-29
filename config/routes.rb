@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  resources :suites
+  resources :domains
+  resources :costumer_mails
+  resources :seos
+  resources :web_sites
+  resources :services
+  resources :blocks
   resources :addresses
   resources :billings
   resources :referents
   resources :heads
   resources :companies
   resources :contracts
+  get 'contracts/:id/addservices' => 'contracts#addservices', as: 'add_service_to_contract'
   root 'home#index'
   get 'home/nono'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 <h1><%= @company.ragione_sociale %> (<%= @company_address.route %>)</h1>
 <h2><%= @head.name + ' ' + @head.surname  %> (<%= @head_address.route %>)</h2>
+<br><br><h2>Referente</h2>
+    <h3><%= @referent.name + ' ' + @referent.surname + ' (' + @referent.mail + ')' %></h3>
+
 <p>
   <strong>Company:</strong>
   <%= @contract.company_id %>
@@ -21,5 +24,6 @@
   <%= @contract.activation_data %>
 </p>
 
+<%= link_to 'Aggiungi Servizi', add_service_to_contract_path(@contract.id) %> |
 <%= link_to 'Edit', edit_contract_path(@contract) %> |
 <%= link_to 'Back', contracts_path %>

@@ -14,6 +14,7 @@ class ContractsController < ApplicationController
     @head = Head.find_by_company_id(@company.id)
     @company_address = Address.find_by_id(@company.address_id)
     @head_address = Address.find_by_id(@head.address_id)
+    @referent = Referent.find_by_contract_id(@contract.id)
   end
 
   # GET /contracts/new
@@ -23,6 +24,7 @@ class ContractsController < ApplicationController
     @contract.company.build_head
     @contract.company.build_address
     @contract.company.head.build_address
+    @contract.build_referent
 
     #@company = Company.new
     #company.address.build
@@ -49,6 +51,10 @@ class ContractsController < ApplicationController
         format.json { render json: @contract.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def addservices
+    @contract = Contract.find(params[:id])
   end
 
   # PATCH/PUT /contracts/1
@@ -84,39 +90,56 @@ class ContractsController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def contract_params
     params.require(:contract).
-        permit(:company_id,
+        permit(
+               :id,
+               :company_id,
                :referent_id,
                :data,
                :activation_data,
-               company_attributes:
-                   [:ragione_sociale,
-                    :piva,
-                    :phone_number,
-                    :fax,
-                    :mail,
-                    :iban,
-                    head_attributes:
-                        [:name,
-                         :surname,
-                         :born_date,
-                         :born_place,
-                         :cod_fiscale,
-                         :document_type,
-                         :document_number,
-                         :document_date,
-                         address_attributes:
-                             [:route,
-                              :number,
-                              :cap,
-                              :prov,
-                              :city]],
-                    address_attributes:
-                        [:route,
-                         :number,
-                         :cap,
-                         :prov,
-                         :city]
-                   ]
+               company_attributes:[
+                   :ragione_sociale,
+                   :piva,
+                   :phone_number,
+                   :fax,
+                   :mail,
+                   :iban,
+                   head_attributes:[
+                        :name,
+                        :surname,
+                        :born_date,
+                        :born_place,
+                        :cod_fiscale,
+                        :document_type,
+                        :document_number,
+                        :document_date,
+                        address_attributes:[
+                            :route,
+                            :number,
+                            :cap,
+                            :prov,
+                            :city]],
+                    address_attributes:[
+                        :route,
+                        :number,
+                        :cap,
+                        :prov,
+                        :city]
+                   ],
+               referent_attributes:[
+                   :name,
+                   :surname,
+                   :role,
+                   :phone,
+                   :mail
+               ],
+               services_attributes:[
+                   :tipo,
+                   :cu,
+                   :q,
+                   :mensilita,
+                   :tot,
+                   :attivazione
+               ]
               )
   end
 end

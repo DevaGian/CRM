@@ -1,0 +1,17 @@
+<% @service.each do |service| %>
+    <%= form_for service, remote: true do |f| %>
+        <input type="hidden" id="service_contract_id" name="service[contract_id]" value="<%=params[:id]%>">
+        <%= f.label :tipo %>
+        <%= f.text_field :tipo %>
+        <%= f.label :cu %>
+        <%= f.text_field :cu %>
+        <%= f.number_field :q %>
+        <%= f.label :mensilita %>
+        <%= f.number_field :mensilita %>
+        <%= f.label :tot %>
+        <%= f.text_field :tot %>
+        <%= f.label :attivazione %>
+        <%= f.date_select :attivazione %>
+        <%= f.submit %>
+    <% end %>
+<% end %>

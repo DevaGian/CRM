@@ -14,6 +14,10 @@
     <%= f.fields_for :company do |builder| %>
         <%= render 'company_field', :f => builder %>
     <% end %>
+    <h1>Referenti</h1>
+    <%= f.fields_for :referent do |builder| %>
+        <%= render 'referent_field', :f => builder %>
+    <% end %>
   <div class="field">
     <%= f.label :data %><br>
     <%= f.date_select :data %>

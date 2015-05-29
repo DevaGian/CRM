@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Padre:</strong>
+  <%= @web_site.padre %>
+</p>
+
+<p>
+  <strong>Servizio:</strong>
+  <%= @web_site.servizio %>
+</p>
+
+<p>
+  <strong>Descrizione:</strong>
+  <%= @web_site.descrizione %>
+</p>
+
+<p>
+  <strong>Importo:</strong>
+  <%= @web_site.importo %>
+</p>
+
+<p>
+  <strong>Attivazione:</strong>
+  <%= @web_site.attivazione %>
+</p>
+
+<p>
+  <strong>Mensilita:</strong>
+  <%= @web_site.mensilita %>
+</p>
+
+<%= link_to 'Edit', edit_web_site_path(@web_site) %> |
+<%= link_to 'Back', web_sites_path %>

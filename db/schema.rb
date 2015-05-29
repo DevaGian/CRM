@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150430154121) do
+ActiveRecord::Schema.define(version: 20150522131451) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "route"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(version: 20150430154121) do
     t.string   "iban",            limit: 27
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+  end
+
+  create_table "blocks", force: :cascade do |t|
+    t.string   "tipo"
+    t.float    "cu"
+    t.integer  "q"
+    t.integer  "mensilita"
+    t.float    "tot"
+    t.date     "attivazione"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -55,6 +67,28 @@ ActiveRecord::Schema.define(version: 20150430154121) do
     t.date     "activation_data"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "discount"
+  end
+
+  create_table "costumer_mails", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "dominio"
+    t.integer  "mb"
+    t.integer  "mensilita"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
+  end
+
+  create_table "domains", force: :cascade do |t|
+    t.string   "nome"
+    t.string   "estensione",  limit: 4
+    t.float    "costo"
+    t.integer  "mensilita"
+    t.float    "tot"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.integer  "contract_id"
   end
 
   create_table "heads", force: :cascade do |t|
@@ -76,10 +110,64 @@ ActiveRecord::Schema.define(version: 20150430154121) do
     t.string   "name"
     t.string   "surname"
     t.string   "role"
-    t.string   "phone",      limit: 10
+    t.string   "phone",       limit: 10
     t.string   "mail"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.integer  "contract_id"
+  end
+
+  create_table "seos", force: :cascade do |t|
+    t.string   "tipo"
+    t.string   "parole"
+    t.float    "importo"
+    t.date     "attivazione"
+    t.integer  "mensilita"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
+  end
+
+  create_table "services", force: :cascade do |t|
+    t.string   "tipo"
+    t.float    "cu"
+    t.integer  "q"
+    t.integer  "mensilita"
+    t.float    "tot"
+    t.date     "attivazione"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
+  end
+
+  create_table "suites", force: :cascade do |t|
+    t.float    "cpu_p"
+    t.float    "ram_p"
+    t.float    "hd_p"
+    t.float    "nas_p"
+    t.integer  "cpu_q"
+    t.integer  "ram_q"
+    t.integer  "hd_q"
+    t.integer  "nas_q"
+    t.float    "base"
+    t.integer  "mensilita"
+    t.date     "attivazione"
+    t.float    "tot"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
+  end
+
+  create_table "web_sites", force: :cascade do |t|
+    t.string   "padre"
+    t.string   "servizio"
+    t.text     "descrizione"
+    t.float    "importo"
+    t.date     "attivazione"
+    t.integer  "mensilita"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "contract_id"
   end
 
 end

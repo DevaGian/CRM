@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Web Sites</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Padre</th>
+      <th>Servizio</th>
+      <th>Descrizione</th>
+      <th>Importo</th>
+      <th>Attivazione</th>
+      <th>Mensilita</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @web_sites.each do |web_site| %>
+      <tr>
+        <td><%= web_site.padre %></td>
+        <td><%= web_site.servizio %></td>
+        <td><%= web_site.descrizione %></td>
+        <td><%= web_site.importo %></td>
+        <td><%= web_site.attivazione %></td>
+        <td><%= web_site.mensilita %></td>
+        <td><%= link_to 'Show', web_site %></td>
+        <td><%= link_to 'Edit', edit_web_site_path(web_site) %></td>
+        <td><%= link_to 'Destroy', web_site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Web site', new_web_site_path %>

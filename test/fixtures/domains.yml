@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  estensione: MyString
+  costo: 1.5
+  mensilita: 1
+  tot: 1.5
+
+two:
+  nome: MyString
+  estensione: MyString
+  costo: 1.5
+  mensilita: 1
+  tot: 1.5

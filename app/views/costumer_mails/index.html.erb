@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Costumer Mails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Dominio</th>
+      <th>Mb</th>
+      <th>Mensilita</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costumer_mails.each do |costumer_mail| %>
+      <tr>
+        <td><%= costumer_mail.nome %></td>
+        <td><%= costumer_mail.dominio %></td>
+        <td><%= costumer_mail.mb %></td>
+        <td><%= costumer_mail.mensilita %></td>
+        <td><%= link_to 'Show', costumer_mail %></td>
+        <td><%= link_to 'Edit', edit_costumer_mail_path(costumer_mail) %></td>
+        <td><%= link_to 'Destroy', costumer_mail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Costumer mail', new_costumer_mail_path %>

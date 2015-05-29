@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: MyString
+  cu: 1.5
+  q: 1
+  mensilita: 1
+  tot: 1.5
+  attivazione: 2015-05-22
+
+two:
+  tipo: MyString
+  cu: 1.5
+  q: 1
+  mensilita: 1
+  tot: 1.5
+  attivazione: 2015-05-22
